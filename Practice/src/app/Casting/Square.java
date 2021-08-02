@@ -10,4 +10,8 @@ public class Square extends Area {
     public void printArea(){
         System.out.println("Area is" + area1);
     };
+    
+    public void printClassName(){
+        System.out.println("Hello from Square");
+    }  //overriding 
 }

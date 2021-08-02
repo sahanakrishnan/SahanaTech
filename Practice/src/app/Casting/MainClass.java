@@ -9,10 +9,13 @@ public class MainClass {
         
         Fruit orangeFruit = new Orange();   //because theres a parent, you need to cast it like ((Orange)orangeFruit);
         m.printColor(orangeFruit);
-        m.printOrange((Orange)orangeFruit);
-
+        System.out.println("-------------------");
+        m.printOrange((Orange)orangeFruit); //this function will call the ORANGE argument 
+        m.printOrange(orangeFruit); //this will call the FRUIT argument
+        System.out.println("-------------------");
+        
         Apple apple = new Apple();
-        m.printColor(apple);
+        m.printColor(apple); //Apple will be converted into  a fruit
 
         Orange orange = new Orange(); //because orange is still the same instant, you do not need to cast
         m.printColor(orange);
@@ -33,7 +36,13 @@ public class MainClass {
         System.out.println(f.getClass());
         
     }
-    public void printOrange(Orange f){ 
+    public void printOrange(Orange f){ //Print ORANGE is overloaded
+    	System.out.println("Accepts Orange Argument");
+        f.printColor();
+    }
+    
+    public void printOrange(Fruit f){ 
+    	System.out.println("Accepts Fruit Argument");
         f.printColor();
     }
 }

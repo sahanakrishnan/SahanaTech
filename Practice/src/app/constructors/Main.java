@@ -27,18 +27,19 @@ public class Main {
 
     }
     public static void main(String[] args) {
-        // Main m = new Main();
-        // System.out.println(m.x);
+         Main m = new Main();
+         System.out.println(m.x);
 
-        // Main m1 = new Main(5);
-        // System.out.println(m1.x);
+         Main m1 = new Main(5);
+         System.out.println(m1.x);
 
-        // Square s = new Square();
+         Square s = new Square();
 
         // PrivateConstructors pC = new PrivateConstructors(5);
         // //PrivateConstructors pC = new PrivateConstructors(); this cannot be accessed as this constructor is private
         //Derived d =  new Derived();
-        Derived2 d2 =  new Derived2();
+//        Derived d2 =  new Derived("s");
+        Derived2 d22 =  new Derived2();
     }
 
 

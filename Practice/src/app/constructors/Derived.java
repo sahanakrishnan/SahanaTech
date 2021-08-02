@@ -9,6 +9,7 @@ public class Derived extends Base {
     } 
 
     public Derived(String s){ 
+//    	super(s);  //if super is not there it will call super WITHOUT arguments...super()
         //even tho there is no call to super, base default constructor is called
         System.out.println("Derived w string " + s);
     } 
