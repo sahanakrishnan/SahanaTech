@@ -52,16 +52,40 @@ public class arrayListExample {
 
 
         //convert array to arrayList
-        String[] strArray = {"S","a","h","S","S","S",};
-        List<String> list = Arrays.asList(strArray);    // note the variable is declared as list which is an interface of arraylist      
+        String[] strArray = {"S","a","h","S","S","S",}; //creating the string Array
+        // METHOD 1 TO CONVERT ARRAY TO ARRAYLIST
+        List<String> list = Arrays.asList(strArray);    // Converting Array to List   
         System.out.println(list);
         System.out.println(list.getClass().getName());
         ArrayList<String> listToArrayList = new ArrayList<String>(list); //how to convert list to arrayList
         System.out.println(listToArrayList);
 
+        // METHOD 2 TO CONVERT ARRAY TO ARRAYLIST
         ArrayList<String> list1 = new ArrayList<String>(); //doing addAll function in order to make arrayList work
         Collections.addAll(list1, strArray);
         System.out.println(list1);
+        
+
+        
+        //Convert ArrayList to Array Method1
+        Object[] objArray = list1.toArray();
+        String[] strArray2 = Arrays.copyOf(objArray, objArray.length, String[].class);
+        
+        System.out.println("-------------");
+
+        System.out.println(Arrays.toString(strArray2));        
+        
+        //Convert ArrayList to Array Method2
+        String[] strArray3 = {};
+        System.out.println("-------------");
+        strArray3 = list1.toArray(strArray3); //toArray we are passing a stringArray
+
+
+        for(int i = 0; i < objArray.length; i++) {
+        	
+        	
+        }
+        
 
         TreeSet<String> abcSet = new TreeSet<String>();
         abcSet.add("pink");

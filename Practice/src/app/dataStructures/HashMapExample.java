@@ -15,8 +15,18 @@ public class HashMapExample {
         System.out.println("Capital of England is " + abcMap.containsKey("England"));
         System.out.println("Capital of England is " + abcMap.containsKey("India")); //contains key wil give true or false
 
-        abcMap.remove("Oslo");
-        System.out.println(abcMap);
+//        abcMap.remove("Oslo");
+//        System.out.println(abcMap);
+        
+        for (String key: abcMap.keySet()) {
+            System.out.println(key + " = " + abcMap.get(key));
+        }    
+        
+        for (String value: abcMap.values()) {
+            System.out.println(" = " + value);
+        }   
+    
     }
+    
 
 }
