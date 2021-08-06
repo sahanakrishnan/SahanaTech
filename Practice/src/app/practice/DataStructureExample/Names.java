@@ -21,6 +21,7 @@ public class Names {
         
         for( int i = 0; i < names2.size(); i++) {
         	String nameStr = names2.get(i);
+        	nameStr = nameStr.toLowerCase();
         	String[] nameSplit = nameStr.split(", ");
 //        	System.out.println(nameSplit[0]);
         	
