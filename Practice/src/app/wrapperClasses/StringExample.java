@@ -19,7 +19,15 @@ public class StringExample {
         System.out.println(substr);  
         String substr2 = s1.substring(5,10); // Starts from 5 and goes to 10  
         System.out.println(substr2);    
-        //String substr3 = s1.substring(5,15); // Returns Exception 
+//        String substr3 = s1.substring(5,15); // Returns Exception 
+        
+        String str = "geeks@for@geeks";
+        String[] aar = str.split("@", 2);
+        System.out.println(aar[0] + " " + aar[1]); 
+        
+        String[] aar1 = str.split("@");
+        System.out.println(aar1.length);  
+        System.out.println(aar1[0] + " " + aar1[1] + " " + aar1[2]); 
 
 
     }

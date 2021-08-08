@@ -25,6 +25,7 @@ public class StaticVariable {
         statX = 40; // when static variable is changed to 40 all existing classes will have 40. 
         System.out.println("accessing non static function" + statX);
         System.out.println("accessing without instance" + getStaticX());
+        System.out.println("accessing without instance" + nonStaticClass.getStaticX());
 
         Car tesla = new Car("Tesla");
         Car GMC = new Car("GMC");

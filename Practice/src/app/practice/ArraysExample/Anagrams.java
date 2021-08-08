@@ -15,7 +15,9 @@ public class Anagrams {
         String anagram = "aj2vabgol";
         
         String sortedWord = sortChars(word);
+        System.out.println(sortedWord);
         String sortedAnagram = sortChars(anagram);
+        System.out.println(sortedAnagram);
         
         System.out.println(sortedWord.equals(sortedAnagram));
 	}
