@@ -1,4 +1,4 @@
-package app.Casting;
+ package app.Casting;
 
 public interface Fruit {
     public String getColor();
